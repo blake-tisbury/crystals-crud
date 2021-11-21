@@ -1,0 +1,274 @@
+
+:root {
+  --background: rgba(18, 18, 18, 1);
+  --header:rgba(255, 255, 255, .05);
+  --cards:rgba(255, 255, 255, .04);
+  --text: #f0ebeb;
+
+  --card-hover: #793cda;
+
+  --LastTrans: #80ffe8e3;
+  --Username: #97d2fb;
+  --crystal: #d8badf;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+}
+ 
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.192);
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -ms-border-radius:15px;
+  -o-border-radius:15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-size: 16px;
+  line-height: 1.625;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+
+  display: grid;                            
+  grid-template-columns: repeat(5, 90px);  
+  grid-auto-rows: 50px;                     
+  grid-auto-flow: row;
+
+  gap: 20px 0px; 
+  
+
+}
+
+body {
+  background-color: var(--background);
+}
+
+
+.Header {
+  grid-row: 1 / span 3; 
+  grid-column: 1 / span 6;
+
+ 
+
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: rgba(117, 82, 242, 0.8);
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 5px;
+  
+}
+
+.Header h1 {
+  font-size: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: rgb(226, 200, 255);
+  justify-content: center;
+  align-content: center;
+ 
+}
+
+.Header img {
+  margin-left: 20px;
+  margin-right: 20px;
+  width:50px; 
+  height: 50px;
+
+}
+
+ 
+.Search  {
+                
+  grid-column: 1 / span 6;
+
+  background-color: var(--header);
+  border-radius: 5px;
+  
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.3s;
+
+}
+
+
+.Search .SearchButton {
+  background-color: var(--cards);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  flex-basis: 200px;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.Search input {
+  background-color: rgb(216, 216, 216);
+  border-radius: 5px;
+ 
+  font-size:16px;
+  
+  border-width:0px;
+  border:none;
+
+  color: #171717;
+  padding: 10px;
+  margin:5%;
+  flex-basis: 400px;
+  
+ 
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+
+
+.Info  {
+                
+  flex-basis: auto;
+
+  grid-column: 1 / span 6;
+
+  background-color: var(--header);
+  border-radius: 5px;
+  
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.Info .Username {
+  background-color: var(--Username);
+  color: #202020;
+  border-radius: 5px;
+  flex-basis: 200px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Info .Crystals {
+  background-color: var(--crystal);
+  color: #202020;
+  flex-basis: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Info .DateModi {
+  background-color: var(--LastTrans);
+  color: #202020;
+  flex-basis: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+::placeholder{
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.Player {
+  grid-column: 1 / span 6;
+  
+  background-color:var(--cards);
+  border-radius: 5px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+
+.Player:hover{
+  box-shadow: rgba(117, 82, 242, 0.4) -5px 5px, rgba(117, 82, 242, 0.3) -10px 10px, rgba(117, 82, 242, 0.2) -15px 15px, rgba(117, 82, 242, 0.1) -20px 20px, rgba(117, 82, 242, 0.05) -25px 25px;
+  background-color: rgba(117, 82, 242,1);
+  margin-left: 30px;
+
+}
+
+.Search .SearchButton:hover{
+ 
+  background-color: rgba(117, 82, 242,1);
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.Player .Username {
+  background-color: var(--cards);
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  flex-basis: 200px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Player .Crystals {
+  background-color: var(--cards);
+  border-radius: 5px;
+  flex-basis: 200px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Player .DateModi {
+  background-color: var(--cards);
+  border-radius: 5px;
+  flex-basis: 200px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
